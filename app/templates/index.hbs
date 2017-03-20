@@ -1,0 +1,12 @@
+<h1 class="jumbotron">Welcome to Rentals</h1>
+
+<ul>
+  {{#each model as |property|}}
+    {{property-tile property=property}}
+  {{/each}}
+</ul>
+
+{{new-property saveProperty2="saveProperty3"}}
+
+{{#link-to 'about'}}About Us{{/link-to}}
+{{#link-to 'contact'}}Contact Us{{/link-to}}
